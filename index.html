@@ -18,13 +18,10 @@
         color: #fff;
       }
       .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.1);
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 8px 10px var(--primary);
         text-align: center;
         max-width: 90%;
         margin: 20px;
@@ -39,10 +36,11 @@
         }
       }
       #divider {
-        width: 20%;
-        height: 0.5rem;
+        /* width: 20%; */
+        margin: 0 10rem;
+        height: 0.3rem;
         border-radius: 2rem;
-        background-color: #cd4a1a;
+        background-color: var(--secondary);
       }
       .social-icons {
         display: flex;
@@ -52,13 +50,13 @@
       }
       .social-icons a {
         text-decoration: none;
-        color: #fff;
-        font-size: 3rem;
+        color: var(--secondary);
+        font-size: 2rem;
         transition: transform 0.3s, color 0.3s;
       }
       .social-icons a:hover {
         transform: scale(1.1);
-        color: #ff4081;
+        color: rgb(180, 80, 40);
       }
       .social-icons i {
         margin: 10px;
@@ -68,6 +66,19 @@
           font-size: 2rem;
           margin: 5px;
         }
+      }
+      /* colors */
+      :root {
+        --primary: #b45028;
+        --secondary: #01a0feff;
+        --dark: #19212aff;
+      }
+      .container > h1 {
+        color: var(--primary);
+      }
+      .container > h3,
+      .container > h2 {
+        color: var(--dark);
       }
     </style>
     <!-- Font Awesome -->
@@ -87,26 +98,30 @@
         <img src="logo.png" width="150rem" alt="" srcset="" />
       </div>
       <h1>Daara Xidmatul Xadiim</h1>
-      <h3>Tuuba Uam - 20024</h3>
+      <h3>Tuuba Uam - 2025</h3>
       <br />
       <div id="divider"></div>
       <br />
       <h2>Suivez-nous sur les réseaux sociaux</h2>
       <div class="social-icons">
-        <!--             <a href="https://facebook.com/votreprofil" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
-        <!--             <a href="https://twitter.com/votreprofil" target="_blank"><i class="fab fa-twitter"></i></a> -->
+        <!-- Youtube -->
+        <a href="https://www.youtube.com/@Xidmatulxadim" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <!-- Instagram -->
         <a
           href="https://instagram.com/daara_xidmatul_xadiim_uam/"
           target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
+        <!-- Tiktok -->
         <a href="https://www.tiktok.com/@daaraxidmatulxadiimuam" target="_blank"
           ><i class="fab fa-tiktok"></i
         ></a>
+        <!-- Telegram -->
         <a href="https://t.me/daara_xidmatul_xadiim_uam/" target="_blank"
           ><i class="fab fa-telegram"></i
         ></a>
-        <!--             <a href="https://youtube.com/c/votreprofil" target="_blank"><i class="fab fa-youtube"></i></a> -->
       </div>
     </div>
   </body>
